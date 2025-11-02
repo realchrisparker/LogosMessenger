@@ -2,7 +2,7 @@
 
 **Secure Chat for Business Professionals**
 
-Logos Messenger is a next-generation, end-to-end encrypted chat application designed for business professionals, investors, and family offices. Inspired by the biblical concept of “Logos” — meaning *The Word* — the app delivers a trusted, secure, and modern communication experience built on Azure Cloud technologies.
+Logos Messenger is a next-generation, end-to-end encrypted chat application sample. Inspired by the biblical concept of “Logos” — meaning *The Word* — the app delivers a trusted, secure, and modern communication experience built on Azure Cloud technologies.
 
 ---
 
@@ -49,7 +49,7 @@ Logos Messenger was created to embody the concept of trustworthy communication �
   - `Conversations`
   - `Chats`
 - Each document includes:
-  - `ElementTypeId` (Partition Key)
+  - `userName or conversationId` (Partition Key)
   - `_ttl` for optional time-to-live
   - `DateTimeOffset` timestamps for global consistency
 
@@ -62,8 +62,7 @@ Logos Messenger was created to embody the concept of trustworthy communication �
 | **Frontend** | Flutter (Dart) |
 | **Backend** | .NET 8 (C#) REST API |
 | **Database** | Azure Cosmos DB |
-| **Hosting** | Azure App Service for Containers |
-| **CI/CD** | GitHub Actions (optional) |
+| **Hosting** | Azure App Service for Containers, Azure API Management, Azure Front Door |
 | **Auth** | SMS + Biometrics (no passwords) |
 
 ---
