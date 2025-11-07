@@ -42,6 +42,11 @@ Logos Messenger was created to embody the concept of trustworthy communication â
   - `ChatsController` â€“ Message persistence and retrieval.
 - Uses `EndpointDescription` attributes for auto-generated API documentation.
 
+## Azure Front Door & Azure API Management
+- REST API resides within Azure API Management.
+  - Additional Security - Azure API Management passes a special token, only it knows, to Azure App Service to ensure only requests coming from API Management are processed.
+- Front Door provides central URI access to the Azure API Management resource.
+
 ### **Database (Azure Cosmos DB)**
 - JSON document model with partition key on `UserName`.
 - Containers:
